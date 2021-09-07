@@ -30,14 +30,4 @@ export default class Counter extends Component {
     this.props.onReset(this.props.id);
   }
 
-
-  // doIncrement() {
-  //   // this.props.value = this.props.value + 1; // won't work ready only
-  //   this.setState({ value: this.state.value + 1 });
-  // };
-
-  // doReset = () => {
-  //   this.setState({ value: 0 })
-  // }
-
 }
