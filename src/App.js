@@ -52,7 +52,7 @@ export default class App extends Component {
   }
 
   doDelete = (id) => {
-    this.state.counters = this.setState({ counters: this.state.counters.filter(x => x.id != id) });
+    this.setState({ counters: this.state.counters.filter(x => x.id != id) });
   }
 
 }
