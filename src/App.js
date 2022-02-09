@@ -3,7 +3,7 @@ import './App.css';
 import Counters from './counters';
 import Header from './Header';
 import Ppc from './ppc';
-
+import ThemeContext from './context';
 
 export default class App extends Component {
 
@@ -18,15 +18,17 @@ export default class App extends Component {
 
   render() {
     return (
-      <div className="App" >
-        <Header count={this.state.counters.filter(x => x.value > 0).length}></Header>
-        <Counters counters={this.state.counters}
-          onIncrement={this.onIncrement}
-          onReset={this.onReset}
-          doGlobalReset={this.doGlobalReset}
-          onDelete={this.doDelete}></Counters>
-        <Ppc></Ppc>
-      </div>
+      <ThemeContext.Provider value={{ name: 'tanmay', theme: 'dark' }}>
+        <div className="App" >
+          <Header count={this.state.counters.filter(x => x.value > 0).length}></Header>
+          <Counters counters={this.state.counters}
+            onIncrement={this.onIncrement}
+            onReset={this.onReset}
+            doGlobalReset={this.doGlobalReset}
+            onDelete={this.doDelete}></Counters>
+          <Ppc></Ppc>
+        </div>
+      </ThemeContext.Provider>
     );
   }
 
