@@ -26,7 +26,7 @@ export default class App extends Component {
             onReset={this.onReset}
             doGlobalReset={this.doGlobalReset}
             onDelete={this.doDelete}></Counters>
-          <Ppc></Ppc>
+          {/* <Ppc></Ppc> */}
         </div>
       </ThemeContext.Provider>
     );

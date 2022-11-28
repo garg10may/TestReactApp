@@ -1,0 +1,8 @@
+{
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#351777",
+    "titleBar.activeBackground": "#4A20A6",
+    "titleBar.activeForeground": "#FAF9FE"
+  },
+  "terminal.integrated.shell.windows": "C:\\Users\\tanmay.garg\\AppData\\Local\\Programs\\Git\\bin\\bash.exe"
+}
